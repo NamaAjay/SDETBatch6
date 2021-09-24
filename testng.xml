@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="5" name="Suite" parallel="none" >
+<listeners>
+<listener class-name="com.qa.utility.Reporting"></listener>
+</listeners>
+  <test thread-count="5" name="Test">
+  <parameter name="url" value="https://www.firstnaukri.com/"></parameter>
+  <parameter name ="Browser" value="chrome"></parameter>
+ 
+  <classes>
+       <class name="com.qa.testscripts.TC_Search001"/>
+        <class name="com.qa.testscripts.TC_ApplyJob002"/>
+      <class name="com.qa.testscripts.TC_RecomendedJobs003"/> 
+     <class name="com.qa.testscripts.TC_TermsAndConditions004"/> 
+    <class name="com.qa.testscripts.TC_CareerGuidance005"/> 
+    <class name="com.qa.testscripts.TC_Shiksha006"></class> 
+ 
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
